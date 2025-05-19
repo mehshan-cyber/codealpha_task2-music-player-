@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Musics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="https://icons.iconarchive.com/icons/icons8/ios7/512/Music-Music-icon.png">
+</head>
+<body>
+
+<div class="app-container">
+    <div id="volume">
+        <button id="muteBtn"><i class="fa-solid fa-volume-high"></i></button>
+        <div id="volume-bar">
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+            <div id="volumeIndicator" class="volume-indicator"></div>
+        </div>
+    </div>
+
+    <img id="albumArt" src="" alt="Album Art">
+    <div id="fade"></div>
+    <div id="uiWrap">
+        <div class="audio-info">
+            <div class="track-info">
+                <div id="trackTitle">Song</div>
+                <div id="bandName">Artist</div>
+                <button id="likeBtn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="seek-bar">
+                <input type="range" id="seekSlider" min="0" step="1" value="0">
+                <div id="bufferingIndicator" class="buffering-indicator"></div>
+                <div id="seekIndicator" class="seek-indicator"></div>
+                <div id="currentTime">0:00</div>
+                <div id="trackTime">0:00</div>
+            </div>
+        </div>
+
+        <div class="audio-controls">
+            <div class="playSkip">
+                <button id="loopBtn"><i class="fas fa-redo"></i></button>
+                <button id="prevBtn"><i class="fas fa-step-backward"></i></button>
+                <button id="playPauseBtn"><i class="fas fa-play"></i></button>
+                <button id="nextBtn"><i class="fas fa-step-forward"></i></button>
+                <button id="shuffleBtn"><i class="fas fa-random"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
